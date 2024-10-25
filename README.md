@@ -1,4 +1,4 @@
-# js-code-
+# js-code-examples
 
 ## Description
 
