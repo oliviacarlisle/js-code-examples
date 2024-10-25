@@ -29,3 +29,9 @@ console.log(Object.getPrototypeOf(bird) === Bird.prototype); // true
 
 // the __proto__ of Bird.prototype is the Object prototype!
 console.log(Object.getPrototypeOf(Bird.prototype) === Object.prototype); // true
+
+// arrow functions don't have a prototype property
+// but they have a __proto__ which is Function.prototype!
+const fn = () => "I am the fn arrow function";
+console.log(fn.prototype); // undefined
+console.log(Object.getPrototypeOf(fn) === Function.prototype); // true
