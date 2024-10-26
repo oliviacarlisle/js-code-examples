@@ -37,3 +37,7 @@ bird.sayHi(); // 'Hi, I am mockingjay'
 
 // You can verify that the sayHi method is on its __proto__ and is not an own property
 console.log(Object.hasOwnProperty(bird.sayHi)); // false
+
+// check that the __proto__ of bird is Bird.prototype
+console.log(Object.getPrototypeOf(bird) === Bird.prototype); // true
+console.log(bird instanceof Bird); // true
